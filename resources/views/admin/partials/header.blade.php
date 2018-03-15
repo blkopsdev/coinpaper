@@ -2,7 +2,7 @@
     {{-- UPPER LEFT LOGO --}}
     <a href="/home" class="logo">
         <span class="logo-mini"><strong>D.M.N</strong></span>
-        <span class="logo-lg">data.mygov.nyc</span>
+        <span class="logo-lg">CoinPaper</span>
     </a>
     {{-- LOAD TEMPLATE NAVIGATION --}}
     @include('admin.partials.dashboard-nav')

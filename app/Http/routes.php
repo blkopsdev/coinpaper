@@ -24,13 +24,9 @@ Route::get('/', [
 
 Route::get('/twitter', function()
 {
-
 	return Twitter::getUserTimeline(['screen_name' => 'jeremyekenedy', 'count' => 20, 'format' => 'json']);
-
     //return Twitter::getHomeTimeline(['count' => 20, 'format' => 'json']);
-
 	//return Twitter::getMentionsTimeline(['count' => 20, 'format' => 'json']);
-
 	//return Twitter::postTweet(['status' => 'Laravel is beautiful', 'format' => 'json']);
 
 });
@@ -234,9 +230,7 @@ Route::group(['middleware' => 'administrator'], function () {
 
 	// resource routes for posts
 	Route::resource('posts', 'PostsController');
-
 	Route::resource('abouts', 'AboutsController');
-
 	Route::resource('involves', 'InvolvesController');
 
 	//Tables

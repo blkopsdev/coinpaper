@@ -47,7 +47,7 @@ return [
 	'last_name'			=> 'Last Name',
 	'confirmPassword'	=> 'Confirm Password',
 	'register_icon'		=> 'user-plus',
-	'register'			=> '&nbsp;Register a new membership',
+	'register'			=> '&nbsp;Register a new account',
 	'register_submit'	=> '&nbsp;Register',
 	'login-button'		=> '&nbsp;Sign In',
 
@@ -74,7 +74,7 @@ return [
 
 	// REGISTER FOOTER PAGE LABEL
 	'login_link_icon'	=> 'user',
-	'login_link'		=> '&nbsp;&nbsp;&nbsp;I already have a membership',
+	'login_link'		=> '&nbsp;&nbsp;&nbsp;I already have a account.',
 
 ];
 
