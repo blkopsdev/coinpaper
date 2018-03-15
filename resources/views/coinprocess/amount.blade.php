@@ -9,7 +9,8 @@
     Process
 @endsection
 
-@section('template_fastload_css')
+@section('style-sheets')
+{!! HTML::style(asset('/assets/css/admin/process.css'), array('type' => 'text/css', 'rel' => 'stylesheet')) !!}
 @endsection
 
 @section('content')
@@ -22,22 +23,22 @@
                         <div class="col-xs-8 col-xs-offset-2">
                             <div class="row icons">
                                 <div class="col-xs-2">
-                                    <img src="/processing_steps/green_from.png">
+                                    <img src="/images/process/green_from.png">
                                 </div>
                                 <div class="col-xs-2">
-                                    <img src="/processing_steps/green_amounts.png">
+                                    <img src="/images/process/green_amounts.png">
                                 </div>
                                 <div class="col-xs-2" style="margin-left:-3px">
-                                    <img src="/processing_steps/to.png">
+                                    <img src="/images/process/to.png">
                                 </div>
                                 <div class="col-xs-2">
-                                    <img src="/processing_steps/confirm.png">
+                                    <img src="/images/process/confirm.png">
                                 </div>
                                 <div class="col-xs-2">
-                                    <img src="/processing_steps/sending.png">
+                                    <img src="/images/process/sending.png">
                                 </div>
                                 <div class="col-xs-2">
-                                    <img src="/processing_steps/exchanging.png">
+                                    <img src="/images/process/exchanging.png">
                                 </div>
                             </div>
                             <div class="row icons">
@@ -147,27 +148,12 @@
                         </div>
                         <div class="col-xs-2">
                             <div class="form-group form-group-exchange pull-right">
-                                <a href="#" class="btn btn-lg btn-exchange btn-green btn-arrow-right" role="button">
+                                <a href="/process/sendto" class="btn btn-lg btn-exchange btn-green" role="button">
                                     <span>Next</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div></div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row row-footer-bottom">
-                    <div class="col-xs-6">
-                        <a href="/terms-of-use" class="a-footer-gray">Terms of use</a>
-                        <a href="/privacy-policy" class="a-footer-gray">Privacy Policy</a>
-                    </div>
-                    <!-- <div class="col-xs-6">
-                        <a href="#" class="a-footer-gray pull-right">
-                            <img src=""> Support</a>
-                    </div> -->
                 </div>
             </div>
         </div>

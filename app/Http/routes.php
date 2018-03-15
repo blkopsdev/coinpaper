@@ -146,7 +146,6 @@ Route::get('admin', function () {
     return redirect('/dashboard');
 });
 Route::get('home',['uses'=>'IndexController@index']);
-Route::get('process',['uses'=>'ProcessController@index']);
 
 Route::get('about',['uses'=>'IndexController@about']);
 
@@ -171,6 +170,11 @@ Route::group(['middleware' => 'auth'], function () {
 		'uses' 		=> 'ProfilesController@show'
 	]);
 
+	Route::get('process/amounts',['uses'=>'ProcessController@index']);
+	Route::get('process/sendto',['uses'=>'ProcessController@sendto']);
+	Route::get('process/confirmation',['uses'=>'ProcessController@confirmation']);
+	Route::get('process/sending',['uses'=>'ProcessController@sending']);
+	
 	// MIDDLEWARE INCEPTIONED - MAKE SURE THIS IS THE CURRENT USERS PROFILE TO EDIT
 	Route::group(['middleware'=> 'currentUser'], function () {
 			Route::resource(

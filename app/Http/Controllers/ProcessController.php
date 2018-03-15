@@ -12,4 +12,19 @@ class ProcessController extends Controller
     {
         return view('coinprocess.amount');
     }
+
+    public function sendto()
+    {
+        return view('coinprocess.sendto');
+    }
+
+    public function confirmation()
+    {
+        return view('coinprocess.confirmation');
+    }
+
+    public function sending()
+    {
+        return view('coinprocess.sending');
+    }
 }
