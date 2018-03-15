@@ -146,6 +146,7 @@ Route::get('admin', function () {
     return redirect('/dashboard');
 });
 Route::get('home',['uses'=>'IndexController@index']);
+Route::get('process',['uses'=>'ProcessController@index']);
 
 Route::get('about',['uses'=>'IndexController@about']);
 
@@ -271,6 +272,7 @@ Route::any('/{page?}',function(){
 		return View('errors.404');
 	}
 })->where('page','.*');
+
 
 //***************************************************************************************//
 //***************************** USER ROUTING EXAMPLES BELOW *****************************//

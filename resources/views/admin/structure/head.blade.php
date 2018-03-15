@@ -16,6 +16,7 @@
 {!! HTML::style(asset('/assets/css/admin/admin.css'), array('type' => 'text/css', 'rel' => 'stylesheet')) !!}
 
 {{-- Load Template Specific CSS --}}
+{!! HTML::style(asset('/assets/css/admin/custom.css'), array('type' => 'text/css', 'rel' => 'stylesheet')) !!}
 @yield('style-sheets')
 
 {{-- Load Layout Specific INLINE CSS --}}

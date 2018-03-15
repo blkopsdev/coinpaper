@@ -196,7 +196,7 @@ class AuthController extends Controller {
 
 		if($user->accountIsActive($code)) {
 			\Session::flash('message', \Lang::get('auth.successActivated') );
-			return redirect('home');
+			return redirect('dashboard');
 		}
 
 		\Session::flash('message', \Lang::get('auth.unsuccessful') );
