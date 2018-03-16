@@ -14,15 +14,14 @@
   <title>CoinPaper</title>
   <style>
     footer{
-      position: absolute;
-      bottom: 0;
+      float: left;
       padding: 20px 0;
     }
   </style>
 </head>
 <body>
   <div class='overlay'></div>
-  <div class="wrap" style="height: calc(100%-60px);">
+  <div class="wrap" style="float: left; height: auto;">
     <nav>
       <div class="nav-header">CoinPaper</div>
       <ul class="links">
