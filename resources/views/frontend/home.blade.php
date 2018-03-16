@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class='overlay'></div>
-  <div class="wrap" style="float: left; height: auto;">
+  <div class="wrap" style="float: left; height: auto; min-height: 100vh;">
     <nav>
       <div class="nav-header">CoinPaper</div>
       <ul class="links">
