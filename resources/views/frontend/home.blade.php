@@ -22,7 +22,7 @@
 </head>
 <body>
   <div class='overlay'></div>
-  <div class="wrap">
+  <div class="wrap" style="height: calc(100%-60px);">
     <nav>
       <div class="nav-header">CoinPaper</div>
       <ul class="links">
