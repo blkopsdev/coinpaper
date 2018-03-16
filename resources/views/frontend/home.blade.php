@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class='overlay'></div>
-  <div class="wrap" style="float: left; height: auto; min-height: 100vh;">
+  <div class="wrap" style="float: left; height: auto; min-height:-moz-calc(100vh - 60px); min-height: -webkit-calc(100vh - 60px)">
     <nav>
       <div class="nav-header">CoinPaper</div>
       <ul class="links">
